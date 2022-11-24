@@ -65,6 +65,11 @@
                   <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px">We're getting married</h3>
                 </div>
               </div>
+              <br />
+              <div>
+                <button onclick="playAudio()" class="fas fa-play" style="height: 55px; width: 55px" type="button"></button>
+                <button onclick="pauseAudio()" class="fas fa-pause" style="height: 55px; width: 55px" type="button"></button>
+              </div>
             </div>
           </div>
           <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px">
@@ -528,12 +533,10 @@
     <!-- Footer End -->
 
     <!-- Background Music -->
-    <div id="audioplayer">
-      <audio src="audio/lagu1.mp3" autoplay>
-        <p>Your Broser not Supported</p>
-        <embed src="audio/lagu1.mp3" width="180" height="90" hidden="true" />
-      </audio>
-    </div>
+    <audio id="audio" src="audio/lagu1.mp3" autoplay>
+      <p>Your Browser not Supported</p>
+      <embed src="audio/lagu1.mp3" width="180" height="90" hidden="true" />
+    </audio>
 
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
@@ -554,8 +557,17 @@
     <script src="js/main.js"></script>
     <!-- My JS -->
     <script src="js/form.js"></script>
-    <script src="js/audio.js"></script>
+    <!-- Play Button -->
+    <script>
+      var x = document.getElementById('audio');
 
-    <!-- Script Auto Refresh Abis Submit-->
+      function playAudio() {
+        x.play();
+      }
+
+      function pauseAudio() {
+        x.pause();
+      }
+    </script>
   </body>
 </html>

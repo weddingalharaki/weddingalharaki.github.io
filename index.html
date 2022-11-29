@@ -485,8 +485,11 @@
                       <option value="XII IPA">XII IPA</option>
                       <option value="XII IPS">XII IPS</option>
                       <option value="Guru">Guru</option>
+                      <option value="Orangtua">Orang Tua</option>
+                      <option value="Lainnya">Lainnya</option>
                     </select>
                   </div>
+
                   <div class="form-group col-sm-6">
                     <input type="tel" id="nomor" name="data[nomor]" pattern="(\+62|62|0|)8[1-9][0-9]{6,9}$" placeholder="Nomor HP" class="form-control bg-secondary border-0 py-4 px-3" required="required" />
                   </div>
@@ -496,8 +499,15 @@
                       <option>Tidak bisa hadir</option>
                     </select>
                   </div>
-                  <div class="form-group col-sm-12">
+                  <div class="form-group col-sm-6">
                     <input type="email" id="email" name="data[email]" placeholder="Email" class="form-control bg-secondary border-0 py-4 px-3" required="required" />
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <select id="sopan" name="data[sopan]" class="form-control bg-secondary border-0" style="height: 52px">
+                      <option value="Bpk.">Bapak</option>
+                      <option value="Ibu.">Ibu</option>
+                      <option value="Kak">Kak</option>
+                    </select>
                   </div>
                 </div>
                 <div class="form-group">
